@@ -27,11 +27,17 @@ box-shadow: 5px 5px 5px;
 width: 50%;
 margin: 0 auto;
 }
+#btnA::after{
+  content: ":Start";
+}
+#btnb::after{
+  content: ":Stop";
+}
 #time::after{
   content: "(s)";
 }
     #minuteStr {
-        color: #ff0000;
+        color:violet;
         font-size: 20px;
         text-align: left;
         position:absolute; top:210px; 
@@ -39,7 +45,7 @@ margin: 0 auto;
     }
     
     #secondStr {
-        color: #ff0000;
+        color: seagreen;
         font-size: 10px;
         text-align: left;
         position:absolute; top:250px; 
@@ -47,7 +53,7 @@ margin: 0 auto;
     }
 
     #remain {
-        color: #ff0000;
+        color: wheat;
         font-size: 20px;
         text-align: center;
         position:absolute; top:310px; 
@@ -55,7 +61,7 @@ margin: 0 auto;
     }
     
     #time {
-        color: #ff0000;
+        color: blue;
         font-size: 20px;
         text-align: center;
         position:absolute; top:340px; 
