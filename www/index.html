@@ -163,6 +163,7 @@
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
         
+        
     }
 
     // Alarmの処理
@@ -199,7 +200,7 @@
     function btnCClick(e){
         //alarm();
         active=false;
-        period=60*parseInt( $("#minute").val())+parseInt($("#second").val());
+        period=3600*parseInt(parseInt($("#hour").val())+60*$("#minute").val())+parseInt($("#second").val());
         $("#time").html("経過時間:0");
         $("#remain").html("残り時間："+ period);
         
@@ -238,6 +239,7 @@
     <button id="btnA">開始</button>  
     <button id="btnB">停止</button>  
     <button id="btnC">セット</button>  
+    <input type="number" id="hour" value=0 >
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >
 </body>
