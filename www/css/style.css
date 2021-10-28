@@ -11,6 +11,14 @@ button{
   background-color: yellow;
  color: green;
 }
+#btnB{
+  background-color: red;
+ color: chartreuse;
+}
+#btnC{
+  background-color: antiquewhite;
+ color:blueviolet;
+}
 #remain{
   font-weight: bold;
 }
@@ -73,7 +81,7 @@ margin: 0 auto;
     }
 
     #btnC {
-        font-size: 10px;
+        font-size: 20px;
         position:absolute; top:380px; left:70%; width:28%; height:60px; 
     }
     
